@@ -1,0 +1,171 @@
+/* blog css */
+.blog-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-wrap header {
+  text-align: center;
+}
+.blog-date {
+  font-size: 0.8rem;
+  color: #a9a9a9;
+  font-weight: 500;
+}
+.blog-wrap img {
+  width: 100%;
+}
+.blog-subCategory {
+  display: flex;
+  justify-content: center;
+}
+.blog-subCategory > div {
+  margin: 1rem;
+}
+.blog-desc {
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.write_comments {
+  width: 600px;
+  margin: 0 auto;
+
+  /* text-align: center; */
+}
+.homepage_info {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.comment_blog_p {
+  white-space: break-all;
+}
+
+/* blogitem.css */
+.blogItem-wrap {
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.blogItem-cover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+.blogItem-wrap h3 {
+  margin: 0.5rem 0 1rem 0;
+  flex: 1;
+}
+.blogItem-desc {
+  position: relative;
+  max-height: 50px;
+  overflow: hidden;
+  padding-right: 0.6rem;
+  font-size: 0.8rem;
+  color: #a9a9a9;
+}
+.blogItem-desc::before {
+  position: absolute;
+  content: "...";
+  bottom: 0;
+  right: 0;
+}
+.blogItem-wrap footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+.blogItem-link {
+  text-decoration: none;
+  color: inherit;
+}
+.blogItem-author {
+  display: flex;
+  align-items: center;
+}
+.blogItem-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+.blogItem-author p {
+  font-size: 0.6rem;
+  color: #a9a9a9;
+  font-weight: 600;
+}
+/* blogList.css */
+.blogList-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  width: 100%;
+  height: 700px;
+  color: var(--text-color);
+}
+/* 미디어가 붙은 것은 모바일 줄일때 적당량 이상이면 아래로 가는거 */
+@media (max-width: 768px) {
+  .blogList-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 950px) {
+  .blogList-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* chip.css */
+.chip {
+  font-size: 0.7rem;
+  background: linear-gradient(to right, #6190e8, #a7bfe8);
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: capitalize;
+}
+
+/* blog */
+.post_items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.blog-edit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+}
+.blog-edit span {
+  background: var(--sidebar-color);
+  transition: var(--tran-05);
+  box-shadow: var(--messageBox-color);
+  color: var(--text-color);
+  padding: 4px;
+  border-radius: 2px;
+  margin: 0px 10px;
+}
+.blog-goBack {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #a9a9a9;
+  font-weight: 500;
+  display: block;
+  border: 0;
+  outline: 0;
+
+  cursor: pointer;
+}
+.likeButton {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

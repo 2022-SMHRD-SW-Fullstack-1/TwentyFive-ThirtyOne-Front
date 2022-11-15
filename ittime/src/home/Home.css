@@ -1,0 +1,136 @@
+.homepage {
+  display: flex;
+
+  width: 100%;
+}
+.homepage .content {
+  max-width: 690px;
+  margin-right: 5px;
+
+}
+
+.homepage .right {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 885px;
+  width: 223px;
+}
+
+.homepage .right .follow .body {
+ 
+  box-shadow: 1px 1px 1px gray;
+  border: solid rgb(236, 230, 230, 0.5);
+  height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8%;
+  color: var(--text-color);
+  width: 260px; 
+  position: fixed;
+  z-index: 1;
+  
+}
+.homepage .right .body .banner{
+  margin-top: 300px;
+}
+.homepage .right .body   {
+  position: fixed;
+  height: 223px;
+  width: 260px;
+}
+.homepage .right .cssAni {
+  height: 300px;
+}
+.homepage .right .cssAni .body {
+  height: 300px;
+  width: 223px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage .right .cssAni .body .container {
+  position: relative;
+  height: 280px;
+}
+.homepage .right .cssAni .body .container .cloud {
+  background: #fff;
+  position: relative;
+  width: 200px;
+  height: 55px;
+  border-radius: 100px;
+}
+.homepage .right .cssAni .body .container .cloud::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 25px;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 55px -5px 0 15px #fff;
+}
+.homepage .right .cssAni .body .container .rain {
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+.homepage .right .cssAni .body .container .rain span {
+  position: relative;
+  margin: 0 2px;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  bottom: 25px;
+  animation: animate 4s linear infinite;
+  transform-origin: bottom;
+}
+.homepage .right .cssAni .body .container .rain span.t10 {
+  animation-duration: calc(3s);
+}
+.homepage .right .cssAni .body .container .rain span.t11 {
+  animation-duration: calc(3.5s);
+}
+.homepage .right .cssAni .body .container .rain span.t12 {
+  animation-duration: calc(4s);
+}
+.homepage .right .cssAni .body .container .rain span.t13 {
+  animation-duration: calc(4.5s);
+}
+.homepage .right .cssAni .body .container .rain span.t14 {
+  animation-duration: calc(5s);
+}
+.homepage .right .cssAni .body .container .rain span.t15 {
+  animation-duration: calc(5.5s);
+}
+.homepage .right .cssAni .body .container .rain span.t16 {
+  animation-duration: calc(6s);
+}
+.homepage .right .cssAni .body .container .rain span.t17 {
+  animation-duration: calc(6.5s);
+}
+.homepage .right .cssAni .body .container .rain span.t18 {
+  animation-duration: calc(7s);
+}
+.homepage .right .cssAni .body .container .rain span.t19 {
+  animation-duration: calc(7.5s);
+}
+.homepage .right .cssAni .body .container .rain span.t20 {
+  animation-duration: calc(8s);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  70% {
+    transform: translateY(263px) scale(1);
+  }
+  100% {
+    transform: translateY(263px) scale(0);
+  }
+}

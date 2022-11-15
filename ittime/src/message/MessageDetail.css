@@ -1,0 +1,148 @@
+.messageDetailBody {
+  height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messageDetailBody .container {
+  height: 650px;
+  min-height: 600px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--sidebar-color);
+  box-shadow: var(--shadow-color);
+  transition: var(--tran-05);
+}
+
+/* header */
+.messageDetailBody .container .header {
+  height: 70px;
+  background: var(--primary-color-light);
+  transition: var(--tran-05);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: var(--text-color);
+}
+.messageDetailBody .container .header .move {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.messageDetailBody .container .header .iconBox {
+  cursor: pointer;
+}
+.messageDetailBody .container .header .iconBox .icon {
+  font-size: 24px;
+}
+.messageDetailBody .container .header .userImg {
+  pointer-events: none;
+}
+.messageDetailBody .container .header .userImg .cover {
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0px 10px 0px 20px;
+}
+.messageDetailBody .container .header .userName span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* chatBox */
+.messageDetailBody .container .chatBox {
+  width: 100%;
+  height: calc(100% - 115px);
+  padding: 10px 20px;
+  overflow-y: auto;
+}
+.messageDetailBody .container .chatBox::-webkit-scrollbar {
+  display: none;
+}
+.messageDetailBody .container .chatBox .message {
+  display: flex;
+  margin: 5px 0px;
+}
+.messageDetailBody .container .chatBox .message p {
+  position: relative;
+  overflow-wrap: break-word;
+  right: 0;
+  max-width: 65%;
+  text-align: left;
+  padding: 12px;
+  background: var(--messageBox-color);
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.messageDetailBody .container .chatBox .message p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--messageBox-color) 0%,
+    var(--messageBox-color) 50%,
+    transparent 50%,
+    transparent
+  );
+}
+.messageDetailBody .container .chatBox .message.frnd_message p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    225deg,
+    var(--messageBox-color) 0%,
+    var(--messageBox-color) 50%,
+    transparent 50%,
+    transparent
+  );
+}
+.messageDetailBody .container .chatBox .message span {
+  text-align: right;
+  display: block;
+  font-size: 0.85em;
+  opacity: 0.5;
+  align-items: flex-end;
+  margin: auto 3px 5px 3px;
+  color: var(--text-color);
+}
+.messageDetailBody .container .chatBox .message.my_message {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+/* chatBoxInput */
+.messageDetailBody .container .chatBoxInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background: #f0f0f0;
+  padding: 11px 20px;
+}
+.messageDetailBody .container .chatBoxInput .icon {
+  cursor: pointer;
+  font-size: 1.3em;
+  color: #51585c;
+}
+.messageDetailBody .container .chatBoxInput input {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 6px 10px;
+  font-size: 0.9em;
+}

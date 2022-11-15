@@ -1,0 +1,16 @@
+.postAll {
+  height: 50px;
+}
+.postAll .button {
+  position: relative;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  justify-content: space-evenly;
+  margin: 0px 5px 0px;
+  cursor: pointer;
+  color: var(--text-color);
+  background: var(--messageHover-color);
+  font-weight: 600;
+}

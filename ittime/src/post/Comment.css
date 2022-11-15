@@ -1,0 +1,152 @@
+.comment_item {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.comment_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    gap: 20px;
+}
+
+.comment_info {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+}
+
+.comment_span {
+    font-weight: 500;
+}
+
+.comment_p {
+    color: themed("textColorSoft");
+}
+
+.comment_date {
+    flex: 1;
+    align-self: center;
+    color: gray;
+    font-size: 11px;
+    margin: 10px;
+}
+
+.comment_write {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.comment_input {
+    flex: 5;
+    padding: 10px;
+    border: 1px solid themed("border");
+    background-color: transparent;
+    color: themed("textColor");
+}
+
+.comment_update {
+    width: 397px;
+    height: 25px;
+    flex: 5;
+    padding: 5px;
+    border: 1px solid themed("border");
+    background-color: transparent;
+    color: themed("textColor");
+}
+
+.comment_button {
+    border: none;
+    background-color: #5271ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.comment_button_show {
+    position: static;
+}
+
+.comment_button_option {
+    border: none;
+    background-color: #2199e4;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 10px;
+    size: 10px;
+}
+
+.comment_likes {
+    font-size: 11px;
+}
+
+.comment_heart {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.comment_button_update {
+    border: none;
+    background-color: #2199e4;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 8px;
+    font-weight: 10px;
+    size: 10px;
+}
+
+/* ccomment */
+
+.ccomment_container {
+    display: flex;
+}
+
+.ccomment_write {
+    width: 400px;
+    height: 25px;
+    flex: 5;
+    padding: 5px;
+    border: 1px solid themed("border");
+    background-color: transparent;
+    color: themed("textColor");
+    margin: 1px;
+}
+
+.ccomment_item {
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ccomment_button_write {
+    border: none;
+    background-color: #2199e4;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 8px;
+    font-weight: 10px;
+    size: 10px;
+    margin-left: 2px;
+}
+
+.ccmtNum{
+    font-size: 15px;
+}

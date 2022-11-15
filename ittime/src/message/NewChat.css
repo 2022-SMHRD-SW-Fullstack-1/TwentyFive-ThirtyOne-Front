@@ -1,0 +1,146 @@
+.newChat {
+  height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newChat .container {
+  height: 650px;
+  min-height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--sidebar-color);
+  box-shadow: var(--shadow-color);
+  transition: var(--tran-05);
+}
+.newChat .container .header {
+  height: 70px;
+  background: var(--primary-color-light);
+  transition: var(--tran-05);
+  display: flex;
+  align-items: center;
+}
+.newChat .container .header .iconDiv {
+  display: flex;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1.5em;
+  padding: 3px;
+  margin-left: 20px;
+}
+.newChat .container .header .headerText {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+.newChat .container .searchUser {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+}
+.newChat .container .searchUser div {
+  width: 100%;
+}
+.newChat .container .searchUser div input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  padding: 6px;
+  height: 38px;
+  border-radius: 30px;
+  font-size: 15px;
+  padding-left: 30px;
+  box-shadow: var(--shadow-color);
+  transition: var(--tran-05);
+}
+.newChat .container .searchUser div input::placeholder {
+  transition: var(--tran-05);
+  color: var(--text-color);
+}
+.newChat .container .searchUser div .icon {
+  position: absolute;
+  color: var(--text-color);
+  transition: var(--tran-05);
+  right: 30px;
+  top: 16px;
+}
+.newChat .container .list {
+  height: calc(100% - 120px);
+  overflow: auto;
+}
+.newChat .container .list a {
+  text-decoration: none;
+}
+.newChat .container .list::-webkit-scrollbar {
+  display: none;
+}
+.newChat .container .list .block {
+  width: 100%;
+  height: 12%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.newChat .container .list .block:hover {
+  background: var(--messageHover-color);
+}
+.newChat .container .list .block .userImg {
+  pointer-events: none;
+}
+.newChat .container .list .block .userImg img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40px;
+  height: 40px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0px 7px;
+}
+.newChat .container .list .block .userDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.newChat .container .list .block .userDetail .listHead {
+  display: flex;
+  justify-content: space-between;
+}
+.newChat .container .list .block .userDetail .listHead h4 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.newChat .container .list .block .userDetail .listHead .time {
+  font-size: 0.75em;
+  color: #aaa;
+  pointer-events: none;
+}
+.newChat .container .list .block .userDetail .lastMessage {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.newChat .container .list .block .userDetail .lastMessage p {
+  color: #aaa;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  font-size: 0.8em;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

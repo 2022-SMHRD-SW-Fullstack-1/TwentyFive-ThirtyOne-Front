@@ -1,0 +1,22 @@
+.share_overlay {
+  display: flex;
+  margin-left: 5px;
+}
+.share_overlay .iconDiv {
+  background: var(--body-color);
+  box-shadow: var(--shadow-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transition: var(--tran-05);
+}
+.share_overlay .iconDiv .icon {
+  font-size: 22px;
+  margin-top: 2px;
+}
+.share_overlay .iconDiv .icon.twitter {
+  margin-left: 2px;
+  margin-top: 3px;
+}

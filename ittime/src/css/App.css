@@ -1,0 +1,118 @@
+:root {
+  --sidebar-color: #fff;
+  --text-color: #707070;
+  --body-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --shadow-color: 0 1px 1px 0 rgba(0, 0, 0, 0.06),
+    0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  --messageHover-color: #f5f5f5;
+  --messageBox-color: #dcf8c6;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+.darkMode {
+  --sidebar-color: #242526;
+  --text-color: #ccc;
+  --body-color: #18191a;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --shadow-color: 0 1px 1px rgba(255, 255, 255, 0.06),
+    0 2px 5px 0 rgba(255, 255, 255, 0.2);
+  --messageHover-color: #707070;
+  --messageBox-color: #97ce6a;
+}
+
+.HomeBody {
+  display: flex;
+  justify-content: center;
+  background: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  transition: var(--tran-05);
+  overflow-y: scroll;
+}
+.HomeBody .leftBar {
+  width: 247px;
+}
+.HomeBody .leftBar .fixed {
+  position: fixed;
+}
+.HomeBody .body {
+  width: 953px;
+  height: 970px;
+}
+.HomeBody .body .headerBar {
+  height: 70px;
+}
+.HomeBody .body .headerBar .fixed {
+  position: fixed;
+  width: 953px;
+  background: var(--sidebar-color);
+  transition: var(--tran-05);
+  display: flex;
+  z-index: 9999;
+  margin-left: -3px;
+}
+.HomeBody .body .view {
+  height: calc(100% - 70px);
+  margin: 0px 10px;
+}
+@media screen and (max-width: 1220px) {
+  .HomeBody .leftBar {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1053px) {
+  .HomeBody .body {
+    width: 100%;
+    height: 960px;
+  }
+  .HomeBody .leftBar {
+    display: none;
+  }
+  .HomeBody .body .headerBar .fixed {
+    width: 100%;
+  }
+  .HomeBody .body .homepage .right {
+    display: none;
+  }
+  .HomeBody .body .homepage .content {
+    width: 100%;
+  }
+  .HomeBody .body .homepage .content .boardDetail .content img {
+    width: 100%;
+    max-height: 360px;
+  }
+}
+
+/* 컴포넌트 이동 애니메이션 */
+.transitions-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+}
+.right-enter {
+  transform: translateX(100%);
+}
+
+.right-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.right-exit {
+  transform: translateX(0);
+}
+
+.right-exit-active {
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}

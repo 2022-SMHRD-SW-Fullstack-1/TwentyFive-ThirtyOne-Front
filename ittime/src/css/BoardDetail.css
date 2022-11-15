@@ -1,0 +1,176 @@
+.boardDetail .scrollShow {
+  overflow: hidden;
+}
+.boardDetail .scrollHidden {
+  overflow: auto;
+}
+.boardDetail .modalHidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.boardDetail .modalShow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+}
+.boardDetail .modalShow .card {
+  background: var(--body-color);
+  box-shadow: var(--shadow-color);
+  width: 300px;
+  padding: 5px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.boardDetail .modalShow .card .header {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--text-color);
+}
+.boardDetail .modalShow .card .header span {
+  margin: 10px;
+}
+.boardDetail .modalShow .card .content {
+  margin-left: 10px;
+}
+.boardDetail .modalShow .card .select {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+.boardDetail .modalShow .card .select span {
+  background: var(--sidebar-color);
+  box-shadow: var(--shadow-color);
+  padding: 2px;
+  margin: 10px;
+  cursor: pointer;
+}
+.boardDetail {
+  -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  box-shadow: var(--shadow-color);
+  border-radius: 20px;
+  background: var(--sidebar-color);
+  color: var(--text-color);
+  z-index: 999;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+  transition: var(--tran-05);
+}
+.boardDetail .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boardDetail .user .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.boardDetail .user .dropdown.hidden {
+  display: none;
+}
+.boardDetail .user .dropdown > button {
+  outline: none;
+  border: none;
+  background: var(--sidebar-color);
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+.boardDetail .user .dropdown .icon {
+  cursor: pointer;
+}
+.boardDetail .user .dropdown .dropdownMenu {
+  position: absolute;
+  width: 110px;
+  top: calc(100% + 0.25rem);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow-color);
+  background: var(--sidebar-color);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  text-align: center;
+}
+.boardDetail .user .dropdown .dropdownMenu p {
+  cursor: pointer;
+  padding: 2px;
+  margin: 2px;
+}
+.boardDetail .user .dropdown .dropdownMenu p:hover {
+  background: var(--primary-color-light);
+  border-radius: 4px;
+}
+.boardDetail .user .dropdown > button:focus + .dropdownMenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.boardDetail .user .userInfo {
+  display: flex;
+  gap: 20px;
+}
+.boardDetail .user .userInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.boardDetail .user .userInfo .details {
+  display: flex;
+  flex-direction: column;
+}
+.boardDetail .user .userInfo .details .userName {
+  font-weight: 500;
+}
+.boardDetail .user .userInfo .details .writeDate {
+  font-size: 12px;
+}
+.boardDetail .content {
+  margin-bottom: 10px;
+}
+.boardDetail .content img {
+  margin-bottom: 10px;
+  width: auto;
+  max-height: 360px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+.boardDetail .bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boardDetail .bottomBar div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.boardDetail .bottomBar .share {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+.boardDetail .bottomBar .share .onShare {
+  position: absolute;
+  top: -220%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}

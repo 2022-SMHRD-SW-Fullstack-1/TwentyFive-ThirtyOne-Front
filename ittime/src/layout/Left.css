@@ -1,0 +1,163 @@
+.leftSidebar {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 10px 14px;
+  background: var(--sidebar-color);
+  transition: var(--tran-05);
+}
+
+@media screen and (max-width: 1220px) {
+  .leftSidebar {
+    width: 100px;
+  }
+  .leftSidebar .leftText {
+    opacity: 0;
+  }
+  .leftSidebar .leftMenuBar .icon {
+    position: absolute;
+    left: 20px;
+  }
+  .leftSidebar .leftMenuBar .iSun,
+  .leftSidebar .leftMenuBar .iMoon {
+    opacity: 0;
+  }
+  .leftSidebar .leftMenuBar .leftMode .leftToggleSwitch {
+    position: absolute;
+    right: 6px;
+  }
+  .leftSidebar .leftImgText .leftImg {
+    margin-left: -13px;
+  }
+}
+
+/* 사이드바 헤더부분 */
+.leftSidebar header .imgText {
+  display: flex;
+  align-items: center;
+}
+.leftSidebar header .imgText img {
+  width: 80px;
+  margin-left: 10px;
+}
+.leftSidebar header .imgText .leftImg {
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.leftSidebar header .imgText .leftText {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: var(--tran-05);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* 사이드바 메뉴부분 */
+.leftSidebar .leftMenuBar .leftNavText,
+.leftSidebar .leftMenuBar .leftModeText {
+  font-size: 20px;
+}
+.leftSidebar .leftMenuBar .leftMenu .leftMenuLinks li:first-child {
+  margin-top: 60px;
+}
+.leftSidebar li {
+  height: 80px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.leftSidebar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: var(--tran-04);
+}
+.leftSidebar li a:hover {
+  background: var(--primary-color);
+}
+.leftSidebar li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  min-width: 60px;
+  pointer-events: none;
+}
+.leftSidebar li .icon,
+.leftSidebar li .leftText {
+  color: var(--text-color);
+  transition: var(--tran-02);
+}
+.leftSidebar li a:hover .icon,
+.leftSidebar li a:hover .leftText {
+  color: var(--sidebar-color);
+}
+
+.leftSidebar .leftMenuBar {
+  height: calc(100% - 53px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftMenuBar li a {
+  padding-left: 25px;
+}
+.leftMenuBar .leftMode {
+  position: relative;
+  border-radius: 8px;
+  background: var(--primary-color-light);
+}
+.leftMenuBar .leftMode .moon-sun {
+  height: 50px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+}
+.leftMenuBar .leftMode .icon {
+  position: absolute;
+}
+.leftMenuBar .leftMode.lightMode .iSun {
+  opacity: 0;
+  transition: var(--tran-02);
+}
+.leftMenuBar .leftMode.darkMode .iMoon {
+  opacity: 0;
+  transition: var(--tran-02);
+}
+.leftMenuBar .leftMode .leftToggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 60px;
+  cursor: pointer;
+}
+.leftMenuBar .leftMode .leftToggleSwitch .leftSwitch {
+  position: relative;
+  height: 22px;
+  width: 44px;
+  border-radius: 25px;
+  background: var(--toggle-color);
+}
+.leftMenuBar .leftMode .leftToggleSwitch .leftSwitch::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background: var(--sidebar-color);
+  transition: var(--tran-03);
+}
+.leftMenuBar .leftMode.darkMode .leftToggleSwitch .leftSwitch::before {
+  left: 24px;
+}

@@ -1,0 +1,126 @@
+.messageBody {
+  height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messageBody .container {
+  height: 650px;
+  min-height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--sidebar-color);
+  box-shadow: var(--shadow-color);
+  transition: var(--tran-05);
+}
+.messageBody .container .header {
+  height: 70px;
+  background: var(--primary-color-light);
+  transition: var(--tran-05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.messageBody .container .header .headerIcon {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.messageBody .container .header .userImg {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.messageBody .container .header .userImg img {
+  align-items: center;
+  justify-content: center;
+  max-width: 40px;
+  height: 40px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0px 7px;
+}
+.messageBody .container .header .userImg .userName {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-left: 6px;
+}
+.messageBody .container .list {
+  height: calc(100% - 70px);
+  overflow: auto;
+}
+.messageBody .container .list a {
+  text-decoration: none;
+}
+.messageBody .container .list::-webkit-scrollbar {
+  display: none;
+}
+.messageBody .container .list .block {
+  width: 100%;
+  height: 12%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.messageBody .container .list .block:hover {
+  background: var(--messageHover-color);
+}
+.messageBody .container .list .block .userImg {
+  pointer-events: none;
+}
+.messageBody .container .list .block .userImg img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40px;
+  height: 40px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0px 7px;
+}
+.messageBody .container .list .block .userDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.messageBody .container .list .block .userDetail .listHead {
+  display: flex;
+  justify-content: space-between;
+}
+.messageBody .container .list .block .userDetail .listHead h4 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.messageBody .container .list .block .userDetail .listHead .time {
+  font-size: 0.75em;
+  color: #aaa;
+  pointer-events: none;
+}
+.messageBody .container .list .block .userDetail .lastMessage {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.messageBody .container .list .block .userDetail .lastMessage p {
+  color: #aaa;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  font-size: 0.8em;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

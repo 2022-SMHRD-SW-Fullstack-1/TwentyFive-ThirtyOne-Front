@@ -1,0 +1,148 @@
+.profile .images {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.profile .cover {
+  width: 102.1%;
+  height: 100%;
+  margin-left: -9.2px;
+  object-fit: cover;
+  box-shadow: var(--shadow-color);
+}
+.profile .profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+}
+
+.profile .profileContainer {
+  padding: 20px 55px 0px 55px;
+}
+
+.profile .profileContainer .uInfo {
+  height: 240px;
+  -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  box-shadow: var(--shadow-color);
+  border-radius: 20px;
+  background-color: var(--sidebar-color);
+  transition: var(--tran-05);
+  color: var(--text-color);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.profile .profileContainer .uInfo .center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.profile .profileContainer .uInfo .center .follow.hidden {
+  display: none;
+}
+.profile .profileContainer .uInfo .center span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.profile .profileContainer .uInfo .center .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profile .profileContainer .uInfo .center .info .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #555;
+}
+.profile .profileContainer .uInfo .center .info .item span {
+  font-size: 12px;
+}
+
+.profile .profileContainer .uInfo .center button {
+  border: none;
+  background-color: #5271ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile .profileContainer .uInfo .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.profile .profileContainer .uInfo .right .DM {
+  cursor: pointer;
+}
+.profile .profileContainer .uInfo .right .DM.hidden {
+  display: none;
+}
+.profile .profileContainer .uInfo .right .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.profile .profileContainer .uInfo .right .dropdown.hidden {
+  display: none;
+}
+.profile .profileContainer .uInfo .right .dropdown > button {
+  outline: none;
+  border: none;
+  background: var(--sidebar-color);
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+.profile .profileContainer .uInfo .right .dropdown .icon {
+  cursor: pointer;
+}
+.profile .profileContainer .uInfo .right .dropdown .dropdownMenu {
+  position: absolute;
+  width: 100px;
+  top: calc(100% + 0.25rem);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--sidebar-color);
+  box-shadow: var(--shadow-color);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  text-align: center;
+}
+.profile .profileContainer .uInfo .right .dropdown .dropdownMenu p {
+  cursor: pointer;
+  padding: 2px;
+  margin: 2px;
+}
+.profile .profileContainer .uInfo .right .dropdown .dropdownMenu p:hover {
+  background: var(--primary-color-light);
+  border-radius: 2px;
+}
+.profile
+  .profileContainer
+  .uInfo
+  .right
+  .dropdown
+  > button:focus
+  + .dropdownMenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
