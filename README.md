@@ -26,6 +26,9 @@
   - 게시글: 좋아요/ 댓글 및 대댓글/ 공유/ 게시물 수정 및 삭제
   - 회원: 프로필 수정/ 회원탈퇴/ 메시지/ 글쓰기/ 검색
   
+# 📋E-R다이어그램
+![image](https://user-images.githubusercontent.com/104156881/202058066-7586b599-c24e-4829-b801-dc3b3aa8e346.png)
+  
 # 🎥 시연 영상
 ![image](https://user-images.githubusercontent.com/104156881/202052655-1c74b4cc-86ae-4788-b948-f9ac884fc59a.png)
 https://youtu.be/bJ0EGLYhLt8
