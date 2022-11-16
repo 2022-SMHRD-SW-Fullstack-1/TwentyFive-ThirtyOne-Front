@@ -21,11 +21,10 @@
   - 협업툴 : Slack , Github
   
 # 📌주요기능
-  - Home: 모든 게시글, 팔로우
-  - Profile: 이미지 등록, 정보수정, 회원탈퇴
-  - Message : 메시지 전송 및 확인
-  - Write: 글 등록, 이미지 등록
-  - Post: 모든 게시글, 각 게시판 글, 상세 게시판
+  - 로그인 : 회원가입/ ID/PW 찾기
+  - 상단바/ 사이드바 : 각 페이지 이동/ Logout/ Dark Mode
+  - 게시글: 좋아요/ 댓글 및 대댓글/ 공유/ 게시물 수정 및 삭제
+  - 회원: 프로필 수정/ 회원탈퇴/ 메시지/ 글쓰기/ 검색
   
 # 🎥 시연 영상
 ![image](https://user-images.githubusercontent.com/104156881/202052655-1c74b4cc-86ae-4788-b948-f9ac884fc59a.png)
