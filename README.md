@@ -1,0 +1,35 @@
+# 🖥 프로젝트 소개
+### SW 예비개발자들을 위한 Social Network Service
+
+# 📝프로젝트 설명
+#### 최근 기사 제목으로 "국내 IT와 스타트업들, "최대 위협 요인은 개발자 부족", "갈수록 부족해지는 IT 개발자", "국내 IT 의사결정권자 65%, 비즈니스 위협요인으로 'IT 인력 부족' 꼽아" 이러한 기사 제목만 봐도 IT 관련 채용은 계속 늘어날 것입니다. 기사 제목 중에 "협력, 소통은 기본... 나만의 장점 찾아야 훌륭한 개발자" 라는 글과 같이 개발자는 협업, 소통이 매우 중요합니다.현재 재 현업 개발자들을 위한 커뮤니티는 존재하는데 예비 개발자들을 위한 커뮤니티는 존재하지 않는다는 것을 알았습니다. 그래서 저희는 예비 개발자들을 위한 SNS 구축을 하게 되었습니다.
+
+# 🕰 개발 기간
+ - 2022.10.06 ~ 2022.11.16 (30일)
+ ![image](https://user-images.githubusercontent.com/104156881/202055467-c69d1de3-4a67-45e0-a114-d4ef3997ebe2.png)
+
+ 
+# 👩‍💻 멤버 구성
+ ![image](https://user-images.githubusercontent.com/104156881/202055614-dd07841e-7f87-4fea-83af-90c026adc06c.png)
+
+
+# 🛠 사용언어 및 사용 Tool
+  - 언어 : JavaScript, Java
+  - 데이터 베이스 : MySQL
+  - Front-end: React
+  - Back-end: SpringBoot, Node JS
+  - 협업툴 : Slack , Github
+  
+# 📌주요기능
+  - Home: 모든 게시글, 팔로우
+  - Profile: 이미지 등록, 정보수정, 회원탈퇴
+  - Message : 메시지 전송 및 확인
+  - Write: 글 등록, 이미지 등록
+  - Post: 모든 게시글, 각 게시판 글, 상세 게시판
+  
+# 🎥 시연 영상
+![image](https://user-images.githubusercontent.com/104156881/202052655-1c74b4cc-86ae-4788-b948-f9ac884fc59a.png)
+https://youtu.be/bJ0EGLYhLt8
+  
+
+
