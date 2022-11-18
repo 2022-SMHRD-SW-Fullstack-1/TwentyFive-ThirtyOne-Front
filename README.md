@@ -12,13 +12,6 @@
 # 👩‍💻 멤버 구성
  ![image](https://user-images.githubusercontent.com/104156881/202055614-dd07841e-7f87-4fea-83af-90c026adc06c.png)
 
-![image](https://user-images.githubusercontent.com/104156881/202659132-5d843c46-a1b0-4893-8c69-cdd9926f5ac0.png)|![image](https://user-images.githubusercontent.com/104156881/202659194-28d0d976-b58d-4738-9bfd-c772f82d32af.png)|![image](https://user-images.githubusercontent.com/104156881/202659252-44e95909-9904-479a-9f94-7251354c360d.png)|![image](https://user-images.githubusercontent.com/104156881/202659473-44b50d30-3e2c-4ffc-a0d6-8f48e905f225.png)
----|---|---|---
-강윤찬|박형주|박진형|유혜원
----|---|---|---
-
-
-
 <tr>
  <td align="center"><a href="https://github.com/Imunury" target='_blank'>강윤찬 GitHuB</a></td>
  <td align="center"><a href="https://github.com/ParkHyeongjoo" target='_blank'>박형주 GitHuB</a></td>
