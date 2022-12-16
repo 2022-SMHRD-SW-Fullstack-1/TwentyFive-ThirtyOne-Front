@@ -34,13 +34,12 @@
   - 회원: 프로필 수정/ 회원탈퇴/ 메시지/ 글쓰기/ 검색
   
 # 시스템 아키텍처
-
   
 # 📋E-R다이어그램
-![image](https://user-images.githubusercontent.com/104156881/202058066-7586b599-c24e-4829-b801-dc3b3aa8e346.png)
   
 # 🎥 시연 영상
-[![image](https://user-images.githubusercontent.com/104156881/202052655-1c74b4cc-86ae-4788-b948-f9ac884fc59a.png)](https://youtu.be/bJ0EGLYhLt8)
-  
+https://user-images.githubusercontent.com/112370791/208056972-56e6e9ce-1cd4-43c6-8b5b-f37ffa1acd4d.mp4
+
+
 
 
